@@ -23,7 +23,7 @@ body {
 h1 {
     font-family: Ubuntu, "Noto Sans", sans-serif;
     font-weight: 300;
-    font-size: 3rem;
+    font-size: 4.5rem;
 }
 
 h2 {
@@ -33,13 +33,32 @@ h2 {
     font-size: 1.5rem;
 }
 
+.header {
+    height: 160px;
+    display: flex;
+    justify-content: center;
+}
+
 .column1 {
     background-color: #2b2d42;
     color: #edf2f4;
     display: flex;
     flex-direction: column;
+
     max-width: 33%;
-    padding: 0 20px;
+    padding: 20px 0 20px 20px;
+
+    border-radius: 20px 0 0 20px;
+}
+
+.column1>* {
+    padding-right: 20px;
+}
+
+.col1HR {
+    border-top: 1px solid #edf2f4;
+    width: 20%;
+    margin-right: 0;
 }
 
 .column1 h2 {
@@ -49,7 +68,26 @@ h2 {
 
 .photo {
     max-width: 35%;
-    align-self: center;
+    /* justify-self: center; */
+    border-radius: 25% 0;
+    padding: 20px;
+}
+
+.aboutMe {
+    line-height: 1.5;
+}
+
+.aboutMe span {
+    color:#ef233c;
+    font-weight: 400;
+}
+
+.skillType {
+    font-weight: 400;
+}
+
+.skillList {
+    margin-bottom: 10px;
 }
 
 .column2 {
@@ -57,5 +95,18 @@ h2 {
     color: #2b2d42;
     display: flex;
     flex-direction: column;
-    padding: 0 20px;
+    
+    padding: 20px 20px 20px 0;
+
+    border-radius: 0 20px 20px 0;
+}
+
+.column2>* {
+    padding-left: 20px;
+}
+
+.col2HR {
+    border-top: 2px solid #2b2d42;
+    width: 20%;
+    margin-left: 0;
 }
