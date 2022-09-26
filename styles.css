@@ -94,6 +94,7 @@ h2 {
 
 .skillType {
     font-weight: 400;
+    color: #8d99ae;
 }
 
 .skillList {
@@ -150,6 +151,10 @@ h2 {
 
 .jobLocation, .jobDates {
     font-size: 0.8rem;
+}
+
+.jobDates {
+    color: #8d99ae;
 }
 
 .jobRole, .jobDetails {
