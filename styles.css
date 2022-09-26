@@ -73,7 +73,8 @@ h2 {
 
 .photo {
     max-width: 35%;
-    /* justify-self: center; */
+    object-fit: scale-down;
+    
     border-radius: 25% 0;
     padding: 20px;
 }
@@ -153,5 +154,21 @@ h2 {
     font-size: 0.9rem;
 }
 
+@media(max-width: 1050px){
+    h1 {
+        font-size: 4rem;
+    }
+}
 
+@media(max-width: 950px){
+    h1 {
+        font-size: 3.5rem;
+    }
+}
+
+@media(max-width: 850px){
+    h1 {
+        font-size: 3rem;
+    }
+}
 
