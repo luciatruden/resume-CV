@@ -95,6 +95,19 @@ h2 {
     margin-bottom: 10px;
 }
 
+.contactInfo {
+    color: #edf2f4;
+}
+
+.contactInfo a {
+    color: #edf2f4;
+    text-decoration: none;
+}
+
+.contactInfo a:hover {
+    color: #ef233c;
+}
+
 .column2 {
     background-color: #edf2f4;
     color: #2b2d42;
