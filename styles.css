@@ -11,12 +11,17 @@ html {
     font-weight: 300;
     font-size: 15px;
     box-sizing: border-box;
+
+    display: flex;
+    justify-content: center;
 }
 
 body {
     /* background-color: pink; */
+    max-width: 1000px;
     display: flex;    
     flex-direction: row;
+    
     
 }
 
