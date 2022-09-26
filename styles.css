@@ -93,6 +93,8 @@ h2 {
 .column2 {
     background-color: #edf2f4;
     color: #2b2d42;
+    font-weight: 400;
+
     display: flex;
     flex-direction: column;
     
@@ -110,3 +112,28 @@ h2 {
     width: 20%;
     margin-left: 0;
 }
+
+.jobTitle {
+    font-weight: 600;
+    
+}
+
+.jobInfo {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+    /* margin-bottom: 5px; */
+}
+
+.jobLocation, .jobDates {
+    font-size: 0.8rem;
+}
+
+.jobRole, .jobDetails {
+    margin-top: 5px;
+    font-weight: 400;
+    font-size: 0.9rem;
+}
+
+
+
