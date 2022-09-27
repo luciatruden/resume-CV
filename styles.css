@@ -162,6 +162,7 @@ h2 {
 
 .jobDates {
     color: #8d99ae;
+    font-weight: 600;
 }
 
 .jobRole, .jobDetails {
