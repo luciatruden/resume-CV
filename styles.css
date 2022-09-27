@@ -188,7 +188,9 @@ h2 {
     }
 }
 
-@media(max-width: 600px){
+
+/* Small screen layout */
+@media(max-width: 700px){
     body {
         flex-direction: column;
     }
