@@ -104,6 +104,9 @@ h2 {
 
 .contactInfo {
     color: #edf2f4;
+    line-height: 2;
+    letter-spacing: 1px;
+    /* vertical-align: middle; */
 }
 
 .contactInfo a {
@@ -117,9 +120,21 @@ h2 {
 
 #email {
     list-style-image: url(icons/at.svg); 
-    color: #edf2f4;
+    /* vertical-align: middle; */
+    
 }
 
+#github {
+    list-style-image: url(icons/github.svg); 
+}
+
+#linkedin {
+    list-style-image: url(icons/linkedin.svg); 
+}
+
+#phone {
+    list-style-image: url(icons/phone.svg); 
+}
 
 
 .column2 {
