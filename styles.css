@@ -224,7 +224,11 @@ h2 {
         border-radius: 0 0 20px 20px;
     }
 
-    .column2 .header, hr {
+    .col2HR, .col1HR {
+        display: none;
+    }
+
+    .column2 .header {
         display: none;
     }
 }
