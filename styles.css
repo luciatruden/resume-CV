@@ -9,27 +9,33 @@
 html {
     font-family: "Noto Sans", sans-serif;
     font-weight: 300;
-    font-size: 15px;
+    font-size: 10pt;
     box-sizing: border-box;
 
     display: flex;
     justify-content: center;
+    
 }
 
 body {
     /* background-color: pink; */
     max-width: 1000px;
     display: flex;    
-    flex-direction: row;
+    flex-direction: column;
     
     
 }
 
-h1 {
+#columns {
+    display: flex;
+    flex-direction: row;
+}
+
+/* h1 {
     font-family: Ubuntu, "Noto Sans", sans-serif;
     font-weight: 300;
     font-size: 4.5rem;
-}
+} */
 
 h2 {
     font-family: Ubuntu, "Noto Sans", sans-serif;
@@ -38,21 +44,53 @@ h2 {
     font-size: 1.5rem;
 }
 
-.header {
-    height: 160px;
-    display: flex;
-    justify-content: center;
-}
+/* HEADER: Name, role and summary. */
 
-.column1 {
+.header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+
     background-color: #2b2d42;
     color: #edf2f4;
+
+    padding: 20px;
+}
+
+#name {
+    margin: 0;
+    font-family: Ubuntu, "Noto Sans", sans-serif;
+    font-weight: 300;
+    font-size: 4rem;
+    color: #8d99ae;
+}
+
+#role {
+    font-family: Ubuntu, "Noto Sans", sans-serif;
+    font-weight: 200;
+    font-size: 2rem;
+
+    color: #ef233c;
+    
+}
+
+#aboutMe {
+    text-align: right;
+    font-size: 1rem;
+    
+}
+
+/* COLUMN 1 - SIDE COLUMN: CONTACT, SKILLS AND EDUCATION */
+
+.column1 {
+    background-color: #edf2f4;
+    color: #2b2d42;
     display: flex;
     flex-direction: column;
 
     max-width: 33%;
     padding: 20px 0 20px 20px;
-
     border-radius: 20px 0 0 20px;
 }
 
@@ -64,53 +102,20 @@ h2 {
     display: none;
 }
 
-.col1HR {
-    border-top: 1px solid #edf2f4;
-    width: 20%;
-    margin-right: 0;
-}
-
 .column1 h2 {
     color: #ef233c;
     
 }
 
-.photo {
-    max-width: 35%;
-    object-fit: scale-down;
-    
-    border-radius: 25% 0;
-    padding: 20px;
-}
-
-.aboutMe {
-    line-height: 1.5;
-    margin-top: 30px;
-}
-
-.aboutMe span {
-    color:#ef233c;
-    font-weight: 400;
-}
-
-.skillType {
-    font-weight: 400;
-    color: #8d99ae;
-}
-
-.skillList {
-    margin-bottom: 10px;
-}
-
 .contactInfo {
-    color: #edf2f4;
+    color: #2b2d42;
     line-height: 2;
     letter-spacing: 1px;
-    /* vertical-align: middle; */
+    
 }
 
 .contactInfo a {
-    color: #edf2f4;
+    color: #2b2d42;
     text-decoration: none;
 }
 
@@ -120,8 +125,7 @@ h2 {
 
 #email {
     list-style-image: url(icons/at.svg); 
-    /* vertical-align: middle; */
-    
+        
 }
 
 #github {
@@ -136,6 +140,20 @@ h2 {
     list-style-image: url(icons/phone.svg); 
 }
 
+
+.skillType {
+    font-weight: 600;
+    color: #2b2d42;
+}
+
+.skillList {
+    margin-bottom: 10px;
+    font-weight: 300;
+    color: #2b2d42;
+}
+
+
+/* COLUMN 2 - WORK EXPERIENCE */
 
 .column2 {
     background-color: #edf2f4;
@@ -154,23 +172,27 @@ h2 {
     padding-left: 20px;
 }
 
+
+
 .col2HR {
     border-top: 2px solid #2b2d42;
     width: 20%;
     margin-left: 0;
 }
 
+
 .jobTitle {
     font-weight: 600;
     text-transform: uppercase;
+    
     
 }
 
 .jobInfo {
     display: flex;
     justify-content: space-between;
-    margin-top: 30px;
-    /* margin-bottom: 5px; */
+    margin-top: 20px;
+    
 }
 
 .jobHR {
@@ -194,11 +216,12 @@ h2 {
     font-size: 0.9rem;
 }
 
-.formativeExperience h2 {
-    margin-top: 30px;
+.column2 ul {
+    padding-left: 20px;
 }
 
-@media(max-width: 1050px){
+
+/* @media(max-width: 1050px){
     h1 {
         font-size: 4rem;
     }
@@ -214,11 +237,11 @@ h2 {
     h1 {
         font-size: 3rem;
     }
-}
+} */
 
 
 /* Small screen layout */
-@media(max-width: 700px){
+/* @media(max-width: 700px){
     body {
         flex-direction: column;
     }
@@ -232,7 +255,7 @@ h2 {
     .column1 h1 {
         display: inline;
         margin-top: 10px;
-        /* font-size: 4rem; */
+        
     }
 
     .column2 {
@@ -246,5 +269,5 @@ h2 {
     .column2 .header {
         display: none;
     }
-}
+} */
 
