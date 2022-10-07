@@ -91,9 +91,9 @@ h2 {
     border-radius: 0 0 0 20px;
 }
 
-.column1>* {
+/* .column1>* {
     padding-right: 20px;
-}
+} */
 
 .column1 h1 {
     display: none;
@@ -105,10 +105,18 @@ h2 {
     
 }
 
+.contactDetails {
+    display: flex;
+    flex-direction: column;
+}
+
 .contactInfo {
     color: #2b2d42;
     line-height: 2;
-    letter-spacing: 1px;
+    /* letter-spacing: 1px; */
+
+    display: flex;
+    flex-direction: row;
     
 }
 
@@ -121,23 +129,16 @@ h2 {
     color: #ef233c;
 }
 
-#email {
-    list-style-image: url(icons/at.svg); 
-        
+.contactIcon {
+    width: 20px;
+    height: auto;
+    padding-right: 5px;
+
 }
 
-#github {
-    list-style-image: url(icons/github.svg); 
+.contactData {
+    
 }
-
-#linkedin {
-    list-style-image: url(icons/linkedin.svg); 
-}
-
-#phone {
-    list-style-image: url(icons/phone.svg); 
-}
-
 
 .skillType {
     font-weight: 600;
