@@ -37,6 +37,8 @@ h2 {
     font-weight: 400;
     text-transform: uppercase;
     font-size: 1.5rem;
+
+    margin: 10px 0 5px;
 }
 
 /* HEADER: Name, role and summary. */
@@ -74,7 +76,7 @@ h2 {
 #aboutMe {
     text-align: right;
     font-size: 1rem;
-    margin: 5px 0;
+    margin: 5px 0 0;
     
 }
 
@@ -101,7 +103,7 @@ h2 {
 
 .column1 h2 {
     color: #ef233c;
-    margin: 14px 0 5px 0;
+    margin: 10px 0 5px 0;
     
 }
 
@@ -201,6 +203,10 @@ h2 {
     
 }
 
+#firstJob {
+    margin-top: 10px;
+}
+
 .jobHR {
     border-top: 1px solid #8d99ae;
     margin-top: 0;
@@ -224,6 +230,7 @@ h2 {
 
 .column2 ul {
     padding-left: 20px;
+    margin-top: 10px;
 }
 
 
